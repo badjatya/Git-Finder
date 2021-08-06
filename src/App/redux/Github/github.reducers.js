@@ -1,3 +1,6 @@
+// Importing Github action types
+import GithubTypes from "./github.types";
+
 const InitialState = {
   searchText: "",
   users: [],
@@ -5,7 +8,22 @@ const InitialState = {
 };
 
 const githubReducer = (state = InitialState, action) => {
-  return state;
+  switch (action.type) {
+    case GithubTypes.SET_GITHUB_USERS:
+      return {
+        ...state,
+        users: action.payload,
+      };
+
+    case GithubTypes.SET_GITHUB_USER:
+      return {
+        ...state,
+        users: action.payload,
+      };
+
+    default:
+      return state;
+  }
 };
 
 export default githubReducer;
