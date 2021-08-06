@@ -1,11 +1,14 @@
 import React, { Component } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // Importing Components
 import Navbar from "./App/components/layouts/Navbar/Navbar.component";
-import Users from "./App/components/users/Users/Users.component";
 
 // Importing Pages
 import Homepage from "./App/pages/Homepage/Homepage";
+import AboutPage from "./App/pages/About/AboutPage";
+import GithubPage from "./App/pages/GithubPage/GithubPage";
+import UserDetailPage from "./App/pages/UserDetailPage/UserDetailPage";
 
 export class App extends Component {
   state = {
@@ -18,11 +21,27 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
-        <Navbar />
-        <Homepage setUsers={this.setUsers} />
-        <Users users={this.state.users} />
-      </div>
+      <>
+        <BrowserRouter>
+          <Navbar />
+          <Switch>
+            <Route
+              exact
+              path="/"
+              component={Homepage}
+              setUsers={this.setUsers}
+            />
+            <Route exact path="/about" component={AboutPage} />
+            <Route
+              exact
+              path="/github"
+              users={this.state.users}
+              component={GithubPage}
+            />
+            <Route exact path="/about:login" component={UserDetailPage} />
+          </Switch>
+        </BrowserRouter>
+      </>
     );
   }
 }
