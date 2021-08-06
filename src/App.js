@@ -5,7 +5,10 @@ import axios from "axios";
 
 // Importing Components
 import Navbar from "./App/components/layouts/Navbar/Navbar.component";
-import Users from "./App/components/users/Users/Users.component";
+// import Users from "./App/components/users/Users/Users.component";
+
+// Importing Pages
+import Homepage from "./App/pages/Homepage/Homepage";
 
 export class App extends Component {
   state = {
@@ -25,7 +28,8 @@ export class App extends Component {
     return (
       <div>
         <Navbar />
-        <Users users={this.state.users} loading={this.state.loading} />
+        {/* <Users users={this.state.users} loading={this.state.loading} /> */}
+        <Homepage />
       </div>
     );
   }
