@@ -25,19 +25,9 @@ export class App extends Component {
         <BrowserRouter>
           <Navbar />
           <Switch>
-            <Route
-              exact
-              path="/"
-              component={Homepage}
-              setUsers={this.setUsers}
-            />
+            <Route exact path="/" component={Homepage} />
             <Route exact path="/about" component={AboutPage} />
-            <Route
-              exact
-              path="/github"
-              users={this.state.users}
-              component={GithubPage}
-            />
+            <Route exact path="/github" component={GithubPage} />
             <Route exact path="/about:login" component={UserDetailPage} />
           </Switch>
         </BrowserRouter>
