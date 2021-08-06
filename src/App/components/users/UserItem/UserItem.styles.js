@@ -5,13 +5,16 @@ import Colors from "../../../constants/Colors";
 
 export const UserItemContainer = styled.div`
   background-color: ${Colors.white};
+  width: 30%;
   padding: 15px;
-  border: 1px solid ${Colors.primary};
+  margin: 10px 20px 10px 0;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.57); */
+  box-shadow: 5px 5px 15px 0px rgba(17, 45, 78, 0.57);
 `;
 
 export const ImgContainer = styled.div`
@@ -29,4 +32,5 @@ export const Img = styled.img`
 export const UserName = styled.p`
   font-size: 1.2rem;
   color: ${Colors.primary};
+  text-transform: capitalize;
 `;
