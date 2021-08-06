@@ -14,7 +14,7 @@ export const Home = styled.main`
 
 export const TextContainer = styled.div`
   width: 45%;
-  margin-right: 20px;
+  margin-right: 80px;
 `;
 export const ImgContainer = styled.div`
   width: 45%;

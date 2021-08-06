@@ -17,22 +17,42 @@ import {
 // Importing CustomButton
 import CustomButton from "../../components/layouts/CustomButton/CustomButton.component";
 
-const Homepage = () => {
-  return (
-    <Home>
-      <TextContainer>
-        <H1>Search Github Users</H1>
-        <Form>
-          <Input type="search" placeholder="Search Users..." />
-          <CustomButton title="Search" />
-        </Form>
-      </TextContainer>
+class Homepage extends React.Component {
+  state = {
+    search: "",
+  };
 
-      <ImgContainer>
-        <Img src={HeroImage} />
-      </ImgContainer>
-    </Home>
-  );
-};
+  onChangeText = (e) => {
+    this.setState({ search: e.target.value });
+  };
+
+  onSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state.search);
+  };
+
+  render() {
+    return (
+      <Home>
+        <TextContainer>
+          <H1>Search Github Users</H1>
+          <Form onSubmit={this.onSubmit}>
+            <Input
+              type="search"
+              placeholder="Search Users..."
+              value={this.state.search}
+              onChange={this.onChangeText}
+            />
+            <CustomButton as="button" title="Search" />
+          </Form>
+        </TextContainer>
+
+        <ImgContainer>
+          <Img src={HeroImage} />
+        </ImgContainer>
+      </Home>
+    );
+  }
+}
 
 export default Homepage;

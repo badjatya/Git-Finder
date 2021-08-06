@@ -8,13 +8,14 @@ import Colors from "../../../constants/Colors";
 export const Button = styled.a`
   color: ${Colors.white};
   background-color: ${Colors.primary};
-  padding: 10px 30px;
+  padding: 11px 30px;
   cursor: pointer;
   text-align: center;
   border: none;
   outline: none;
   display: block;
   text-decoration: none;
+  /* font-weight: 600; */
 
   &:hover {
     background-color: ${Colors.secondary};
