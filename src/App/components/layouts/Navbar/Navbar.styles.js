@@ -6,14 +6,19 @@ import Colors from "../../../constants/Colors";
 // Importing Icons
 import { FaGithub } from "react-icons/fa";
 
-export const Nav = styled.nav`
+export const NavContainer = styled.div`
   width: 100%;
   height: 80px;
   background-color: ${Colors.primary};
+`;
+
+export const Nav = styled.nav`
+  width: 1024px;
+  max-width: 1024px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
 `;
 
 export const Logo = styled.p`
