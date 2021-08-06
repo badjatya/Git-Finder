@@ -1,5 +1,8 @@
 import React from "react";
 
+// Importing axios
+import axios from "axios";
+
 // Importing Img
 import HeroImage from "../../assets/img/Hero.svg";
 
@@ -20,15 +23,22 @@ import CustomButton from "../../components/layouts/CustomButton/CustomButton.com
 class Homepage extends React.Component {
   state = {
     search: "",
+    users: [],
+    loading: false,
   };
 
   onChangeText = (e) => {
     this.setState({ search: e.target.value });
   };
 
-  onSubmit = (e) => {
+  onSubmit = async (e) => {
     e.preventDefault();
-    console.log(this.state.search);
+    this.setState({ loading: true });
+    const response = await axios.get(
+      `https://api.github.com/search/users?q=${this.state.search}&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
+    );
+    this.setState({ users: response.data.items, loading: false, search: "" });
+    this.props.setUsers(this.state.users);
   };
 
   render() {
