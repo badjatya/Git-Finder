@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 // Importing Styles
 import {
@@ -10,22 +10,21 @@ import {
   NavLink,
 } from "./Navbar.styles";
 
-class Navbar extends Component {
-  render() {
-    return (
-      <NavContainer>
-        <Nav>
-          <Logo>
-            <GithubIcon /> Github Finder
-          </Logo>
+const Navbar = () => {
+  return (
+    <NavContainer>
+      <Nav>
+        <Logo>
+          <GithubIcon /> Github Finder
+        </Logo>
 
-          <NavLinks>
-            <NavLink>Home</NavLink>
-            <NavLink>About</NavLink>
-          </NavLinks>
-        </Nav>
-      </NavContainer>
-    );
-  }
-}
+        <NavLinks>
+          <NavLink>Home</NavLink>
+          <NavLink>About</NavLink>
+        </NavLinks>
+      </Nav>
+    </NavContainer>
+  );
+};
+
 export default Navbar;

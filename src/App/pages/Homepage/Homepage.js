@@ -25,9 +25,10 @@ const Homepage = (props) => {
   const [search, setSearch] = useState("");
   const [users, setUsers] = useState([]);
 
-  const onSubmit = async (e) => {
+  const SubmitHandler = async (e) => {
+    e.preventDefault();
     const response = await axios.get(
-      `https://api.github.com/search/users?q=${this.state.search}&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
+      `https://api.github.com/search/users?q=${search}&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
     );
     setUsers(response.data.items);
     setSearch("");
@@ -37,13 +38,7 @@ const Homepage = (props) => {
     <Home>
       <TextContainer>
         <H1>Search Github Users</H1>
-        <Form
-          onSubmit={() => {
-            onSubmit();
-            console.log(users);
-            props.history.push("/github");
-          }}
-        >
+        <Form onSubmit={SubmitHandler}>
           <Input
             type="search"
             placeholder="Search Users..."
