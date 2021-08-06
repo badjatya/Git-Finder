@@ -33,3 +33,23 @@ export const Logo = styled.p`
 export const GithubIcon = styled(FaGithub)`
   margin-right: 10px;
 `;
+
+export const NavLinks = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const NavLink = styled.a`
+  text-decoration: none;
+  color: ${Colors.white};
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:hover {
+    color: ${Colors.secondary};
+  }
+`;

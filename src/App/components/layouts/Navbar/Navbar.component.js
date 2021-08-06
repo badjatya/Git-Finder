@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 
 // Importing Styles
-import { NavContainer, Nav, Logo, GithubIcon } from "./Navbar.styles";
+import {
+  NavContainer,
+  Nav,
+  Logo,
+  GithubIcon,
+  NavLinks,
+  NavLink,
+} from "./Navbar.styles";
 
 class Navbar extends Component {
   render() {
@@ -11,6 +18,11 @@ class Navbar extends Component {
           <Logo>
             <GithubIcon /> Github Finder
           </Logo>
+
+          <NavLinks>
+            <NavLink>Home</NavLink>
+            <NavLink>About</NavLink>
+          </NavLinks>
         </Nav>
       </NavContainer>
     );

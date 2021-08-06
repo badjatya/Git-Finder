@@ -6,7 +6,7 @@ import Colors from "../../constants/Colors";
 export const Home = styled.main`
   width: 1024px;
   max-width: 1024px;
-  margin: 8% auto 30px auto;
+  margin: 10% auto 0 auto;
   display: flex;
   align-items: center;
   overflow: hidden;
