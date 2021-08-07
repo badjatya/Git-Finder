@@ -1,14 +1,12 @@
 import React from "react";
 
-// Importing Components
-import CustomButton from "../../layouts/CustomButton/CustomButton.component";
-
 // Importing Styles
 import {
   UserItemContainer,
   ImgContainer,
   Img,
   UserName,
+  Button,
 } from "./UserItem.styles";
 
 const UserItem = (props) => {
@@ -20,7 +18,7 @@ const UserItem = (props) => {
       </ImgContainer>
 
       <UserName>{login}</UserName>
-      <CustomButton title="More" href={html_url} />
+      <Button to={`/github/${login}`}>More</Button>
     </UserItemContainer>
   );
 };

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // Importing Colors
 import Colors from "../../../constants/Colors";
@@ -18,14 +19,16 @@ export const UserItemContainer = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
+
   border-radius: 50%;
 `;
 
 export const Img = styled.img`
   width: 100%;
   height: 100%;
+  border: 2px solid ${Colors.primary};
   border-radius: 50%;
 `;
 
@@ -33,4 +36,20 @@ export const UserName = styled.p`
   font-size: 1.2rem;
   color: ${Colors.primary};
   text-transform: capitalize;
+`;
+
+export const Button = styled(Link)`
+  text-decoration: none;
+  border: 1px solid ${Colors.primary};
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: ${Colors.primary};
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: ${Colors.primary};
+    color: ${Colors.white};
+  }
 `;
