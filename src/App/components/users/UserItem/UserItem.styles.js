@@ -40,12 +40,12 @@ export const UserName = styled.p`
 
 export const Button = styled(Link)`
   text-decoration: none;
-  border: 1px solid ${Colors.primary};
+  border: 2px solid ${Colors.primary};
   padding: 5px 20px;
   border-radius: 10px;
   color: ${Colors.primary};
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   transition: all 0.3s ease;
 
   &:hover {
