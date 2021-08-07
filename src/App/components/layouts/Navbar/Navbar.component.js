@@ -4,6 +4,7 @@ import React from "react";
 import {
   NavContainer,
   Nav,
+  LogoContainer,
   Logo,
   GithubIcon,
   NavLinks,
@@ -14,13 +15,15 @@ const Navbar = () => {
   return (
     <NavContainer>
       <Nav>
-        <Logo>
-          <GithubIcon /> Github Finder
-        </Logo>
+        <LogoContainer to="/">
+          <Logo>
+            <GithubIcon /> Github Finder
+          </Logo>
+        </LogoContainer>
 
         <NavLinks>
-          <NavLink>Home</NavLink>
-          <NavLink>About</NavLink>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
         </NavLinks>
       </Nav>
     </NavContainer>
