@@ -7,7 +7,7 @@ export const UserItemContainer = styled.div`
   background-color: ${Colors.white};
   width: 30%;
   padding: 15px;
-  margin: 10px 20px 10px 0;
+  margin-bottom: 50px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;

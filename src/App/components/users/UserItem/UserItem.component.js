@@ -11,8 +11,8 @@ import {
   UserName,
 } from "./UserItem.styles";
 
-const UserItem = () => {
-  const { login, avatar_url, html_url } = this.props.user;
+const UserItem = (props) => {
+  const { login, avatar_url, html_url } = props.user;
   return (
     <UserItemContainer>
       <ImgContainer>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
 
 // Importing axios
@@ -21,18 +21,29 @@ import {
 // Importing CustomButton
 import CustomButton from "../../components/layouts/CustomButton/CustomButton.component";
 
-const Homepage = (props) => {
+// Importing redux
+import { useDispatch } from "react-redux";
+import * as githubActions from "../../redux/Github/github.actions";
+
+const Homepage = ({ history }) => {
   const [search, setSearch] = useState("");
-  const [users, setUsers] = useState([]);
+  const [githubUsers, setGithubUsers] = useState([]);
+
+  const dispatch = useDispatch();
 
   const SubmitHandler = async (e) => {
     e.preventDefault();
     const response = await axios.get(
       `https://api.github.com/search/users?q=${search}&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
     );
-    setUsers(response.data.items);
     setSearch("");
+    setGithubUsers(response.data.items);
+    history.push("/github");
   };
+
+  useEffect(() => {
+    dispatch(githubActions.setGithubUsers(githubUsers));
+  }, [dispatch, githubUsers]);
 
   return (
     <Home>
