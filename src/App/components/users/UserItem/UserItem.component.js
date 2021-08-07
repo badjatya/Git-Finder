@@ -10,7 +10,7 @@ import {
 } from "./UserItem.styles";
 
 const UserItem = (props) => {
-  const { login, avatar_url, html_url } = props.user;
+  const { login, avatar_url } = props.user;
   return (
     <UserItemContainer>
       <ImgContainer>
