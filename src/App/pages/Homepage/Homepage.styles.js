@@ -51,11 +51,18 @@ export const ImgContainer = styled.div`
     height: 300px;
     margin-bottom: 40px;
   }
+
+  /* Breakpoint 375px  */
+  @media screen and (max-width: 375px) {
+    margin-bottom: 10px;
+  }
 `;
+
 export const Img = styled.img`
   width: 100%;
   height: 100%;
 `;
+
 export const H1 = styled.h1`
   font-size: 4rem;
   font-weight: 600;
@@ -75,6 +82,12 @@ export const H1 = styled.h1`
   @media screen and (max-width: 425px) {
     font-size: 2rem;
   }
+
+  /* Breakpoint 375px  */
+  @media screen and (max-width: 375px) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 `;
 export const Form = styled.form`
   display: flex;
@@ -85,4 +98,9 @@ export const Input = styled.input`
   padding: 10px 30px;
   outline: none;
   border: 1px solid ${Colors.primary};
+
+  /* Breakpoint 375px  */
+  @media screen and (max-width: 375px) {
+    padding: 10px 15px;
+  }
 `;
