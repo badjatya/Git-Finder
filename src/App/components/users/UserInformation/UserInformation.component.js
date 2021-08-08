@@ -3,6 +3,13 @@ import React from "react";
 // Importing Components
 import TextWrapper from "../../layouts/TextWrapper/TextWrapper.component";
 
+// Importing Styles
+import {
+  WebsiteContainer,
+  WebsiteTitle,
+  WebsiteLink,
+} from "./UserInformation.styles";
+
 const UserInformation = ({ user }) => {
   return (
     <div>
@@ -13,7 +20,16 @@ const UserInformation = ({ user }) => {
       />
       <TextWrapper title="bio" text={user.bio ? user.bio : "None"} />
       <TextWrapper title="hireable" text={user.hireable ? "yes" : "no"} />
-      <TextWrapper title="website" text={user.blog ? user.blog : "none"} />
+
+      <WebsiteContainer>
+        <WebsiteTitle>Website: </WebsiteTitle>
+        <div>
+          <WebsiteLink href={user.blog ? "https://" + user.blog : "/"}>
+            {user.blog ? user.blog : "none"}
+          </WebsiteLink>
+        </div>
+      </WebsiteContainer>
+
       <TextWrapper
         title="twitter"
         text={user.twitter_username ? user.twitter_username : "none"}

@@ -47,6 +47,7 @@ export const Button = styled.a`
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.3s ease;
+  cursor: pointer;
 
   &:hover {
     background-color: ${Colors.primary};
