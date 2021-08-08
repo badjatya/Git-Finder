@@ -23,15 +23,34 @@ export const Home = styled.main`
   @media screen and (max-width: 768px) {
     margin: 20% auto 10% auto;
   }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    flex-direction: column-reverse;
+    margin: 40px auto 0 auto;
+  }
 `;
 
 export const TextContainer = styled.div`
   width: 45%;
   margin-right: 80px;
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    width: 78%;
+    margin: 0 auto;
+  }
 `;
 export const ImgContainer = styled.div`
   width: 45%;
   height: 80%;
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 40px;
+  }
 `;
 export const Img = styled.img`
   width: 100%;
@@ -50,6 +69,11 @@ export const H1 = styled.h1`
   /* Breakpoint 768px  */
   @media screen and (max-width: 768px) {
     font-size: 2.7rem;
+  }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    font-size: 2rem;
   }
 `;
 export const Form = styled.form`

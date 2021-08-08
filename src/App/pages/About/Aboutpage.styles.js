@@ -21,6 +21,12 @@ export const AboutContainer = styled.div`
   @media screen and (max-width: 768px) {
     margin: 10% auto 4% auto;
   }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    margin: 10% auto 50px auto;
+  }
 `;
 
 export const LeftColumn = styled.div`
@@ -31,6 +37,12 @@ export const LeftColumn = styled.div`
   @media screen and (max-width: 768px) {
     width: 47%;
   }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    width: 90%;
+    height: 250px;
+  }
 `;
 
 export const RightColumn = styled.div`
@@ -40,6 +52,12 @@ export const RightColumn = styled.div`
   /* Breakpoint 768px  */
   @media screen and (max-width: 768px) {
     width: 47%;
+  }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    width: 90%;
+    height: 250px;
   }
 `;
 

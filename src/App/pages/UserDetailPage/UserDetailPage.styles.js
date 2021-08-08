@@ -140,4 +140,10 @@ export const RepoContainer = styled.div`
     width: 650px;
     max-width: 650px;
   }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    width: 90%;
+    margin: 100px auto 30px auto;
+  }
 `;

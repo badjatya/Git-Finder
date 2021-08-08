@@ -35,4 +35,16 @@ export const Container = styled.main`
     width: 650px;
     max-width: 650px;
   }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    width: 425px;
+    max-width: 425px;
+  }
+
+  /* Breakpoint 375px  */
+  @media screen and (max-width: 375px) {
+    width: 375px;
+    max-width: 375px;
+  }
 `;

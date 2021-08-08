@@ -16,10 +16,20 @@ export const Container = styled.div`
   &:hover {
     box-shadow: 5px 5px 15px 0px rgba(17, 45, 78, 0.57);
   }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+  }
 `;
 
 export const Details = styled.div`
   width: 50%;
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    width: 90%;
+  }
 `;
 export const RepoDetails = styled.div`
   width: 25%;
@@ -27,22 +37,46 @@ export const RepoDetails = styled.div`
   /* Breakpoint 1024px  */
   @media screen and (max-width: 1024px) {
     width: 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    width: 90%;
   }
 `;
 export const ButtonContainer = styled.div`
   width: 20%;
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    width: 90%;
+  }
 `;
 
 export const Heading = styled.p`
   font-size: 1.2rem;
   color: ${Colors.primary};
   font-weight: 600;
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    margin-bottom: -10px;
+    margin-top: 5px;
+  }
 `;
 
 export const Text = styled.p`
   font-size: 1rem;
   color: ${Colors.black};
   font-weight: 400;
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    margin-bottom: -10px;
+  }
 `;
 
 export const Button = styled.a`
@@ -58,5 +92,11 @@ export const Button = styled.a`
   &:hover {
     background-color: ${Colors.primary};
     color: ${Colors.white};
+  }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 `;

@@ -11,6 +11,11 @@ const UsersContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+  }
 `;
 
 const Users = (props) => {

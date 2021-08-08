@@ -16,6 +16,12 @@ export const UserItemContainer = styled.div`
   align-items: center;
   /* box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.57); */
   box-shadow: 5px 5px 15px 0px rgba(17, 45, 78, 0.57);
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    width: 80%;
+    margin-bottom: 30px;
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -52,5 +58,12 @@ export const Button = styled.a`
   &:hover {
     background-color: ${Colors.primary};
     color: ${Colors.white};
+  }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    display: block;
+    width: 50%;
+    text-align: center;
   }
 `;
