@@ -5,7 +5,7 @@ const Colors = {
   offWhite: "#F4F6F6",
   white: "#fff",
   black: "#000",
-  gray: "#eee",
+  gray: "#8080802e",
 };
 
 export default Colors;

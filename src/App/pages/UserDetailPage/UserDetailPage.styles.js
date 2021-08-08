@@ -15,8 +15,9 @@ export const UserDetail = styled.div`
 export const LeftColumn = styled.div`
   width: 30%;
   height: 450px;
-  background-color: #8080802e;
+  background-color: ${Colors.gray};
   border-radius: 15px;
+  box-shadow: 5px 5px 15px 0px rgba(17, 45, 78, 0.57);
 `;
 
 export const RightColumn = styled.div`
@@ -64,4 +65,10 @@ export const Button = styled.a`
     background-color: ${Colors.primary};
     color: ${Colors.white};
   }
+`;
+
+export const RepoContainer = styled.div`
+  width: 1024px;
+  max-width: 1024px;
+  margin: 0 auto;
 `;
