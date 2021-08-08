@@ -10,6 +10,11 @@ export const WebsiteContainer = styled.div`
   :not(:last-child) {
     margin-bottom: -20px;
   }
+
+  /* Breakpoint 320px 
+  @media screen and (max-width: 320px) {
+    justify-content: space-between;
+  } */
 `;
 
 export const WebsiteTitle = styled.p`
@@ -18,6 +23,13 @@ export const WebsiteTitle = styled.p`
   color: ${Colors.primary};
   text-transform: capitalize;
   width: 30%;
+
+  /* Breakpoint 320px  */
+  @media screen and (max-width: 320px) {
+    font-size: 1rem;
+    width: 25%;
+    margin-right: 30px;
+  }
 `;
 
 export const WebsiteLink = styled.a`
@@ -31,5 +43,11 @@ export const WebsiteLink = styled.a`
 
   &:hover {
     color: ${Colors.primary};
+  }
+
+  /* Breakpoint 320px  */
+  @media screen and (max-width: 320px) {
+    font-size: 0.9rem;
+    width: 65%;
   }
 `;

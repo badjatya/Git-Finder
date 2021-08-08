@@ -95,6 +95,11 @@ export const Name = styled.p`
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  /* Breakpoint 320px  */
+  @media screen and (max-width: 320px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const ButtonContainer = styled.div`

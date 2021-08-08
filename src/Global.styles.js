@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    font-size: 16px;
     }
 
     *{
@@ -46,5 +47,11 @@ export const Container = styled.main`
   @media screen and (max-width: 375px) {
     width: 375px;
     max-width: 375px;
+  }
+
+  /* Breakpoint 320px  */
+  @media screen and (max-width: 320px) {
+    width: 320px;
+    max-width: 320px;
   }
 `;

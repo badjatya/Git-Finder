@@ -66,6 +66,11 @@ export const Heading = styled.p`
     margin-bottom: -10px;
     margin-top: 5px;
   }
+
+  /* Breakpoint 320px  */
+  @media screen and (max-width: 320px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Text = styled.p`
@@ -76,6 +81,11 @@ export const Text = styled.p`
   /* Breakpoint 425px  */
   @media screen and (max-width: 425px) {
     margin-bottom: -10px;
+  }
+
+  /* Breakpoint 320px  */
+  @media screen and (max-width: 320px) {
+    font-size: 0.9rem;
   }
 `;
 
@@ -98,5 +108,10 @@ export const Button = styled.a`
   @media screen and (max-width: 425px) {
     margin-top: 20px;
     margin-bottom: 10px;
+  }
+
+  /* Breakpoint 320px  */
+  @media screen and (max-width: 320px) {
+    font-size: 0.9rem;
   }
 `;

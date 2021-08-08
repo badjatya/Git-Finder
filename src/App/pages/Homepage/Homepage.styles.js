@@ -40,6 +40,12 @@ export const TextContainer = styled.div`
     width: 78%;
     margin: 0 auto;
   }
+
+  /* Breakpoint 320px  */
+  @media screen and (max-width: 320px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
 export const ImgContainer = styled.div`
   width: 45%;

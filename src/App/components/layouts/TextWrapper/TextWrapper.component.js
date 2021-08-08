@@ -10,6 +10,11 @@ export const TextContainer = styled.div`
   :not(:last-child) {
     margin-bottom: -20px;
   }
+
+  /* Breakpoint 320px  */
+  @media screen and (max-width: 320px) {
+    justify-content: space-between;
+  }
 `;
 
 export const Title = styled.p`
@@ -18,6 +23,12 @@ export const Title = styled.p`
   color: ${Colors.primary};
   text-transform: capitalize;
   width: 30%;
+
+  /* Breakpoint 320px  */
+  @media screen and (max-width: 320px) {
+    font-size: 1rem;
+    width: 25%;
+  }
 `;
 
 export const Text = styled.p`
@@ -27,6 +38,12 @@ export const Text = styled.p`
   font-weight: 400;
   text-transform: capitalize;
   width: 70%;
+
+  /* Breakpoint 320px  */
+  @media screen and (max-width: 320px) {
+    font-size: 0.9rem;
+    width: 65%;
+  }
 `;
 
 const TextWrapper = (props) => {
