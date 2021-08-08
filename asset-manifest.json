@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/Git-Finder/static/js/main.c1de70df.chunk.js",
+    "main.js.map": "/Git-Finder/static/js/main.c1de70df.chunk.js.map",
+    "runtime-main.js": "/Git-Finder/static/js/runtime-main.d3a4e543.js",
+    "runtime-main.js.map": "/Git-Finder/static/js/runtime-main.d3a4e543.js.map",
+    "static/js/2.56f33669.chunk.js": "/Git-Finder/static/js/2.56f33669.chunk.js",
+    "static/js/2.56f33669.chunk.js.map": "/Git-Finder/static/js/2.56f33669.chunk.js.map",
+    "static/js/3.fd7643c2.chunk.js": "/Git-Finder/static/js/3.fd7643c2.chunk.js",
+    "static/js/3.fd7643c2.chunk.js.map": "/Git-Finder/static/js/3.fd7643c2.chunk.js.map",
+    "index.html": "/Git-Finder/index.html",
+    "static/js/2.56f33669.chunk.js.LICENSE.txt": "/Git-Finder/static/js/2.56f33669.chunk.js.LICENSE.txt",
+    "static/media/About.5c313ee8.svg": "/Git-Finder/static/media/About.5c313ee8.svg",
+    "static/media/Hero.10c99e4f.svg": "/Git-Finder/static/media/Hero.10c99e4f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3a4e543.js",
+    "static/js/2.56f33669.chunk.js",
+    "static/js/main.c1de70df.chunk.js"
+  ]
+}
