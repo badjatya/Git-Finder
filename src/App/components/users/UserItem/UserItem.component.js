@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 // Importing Styles
 import {
@@ -11,6 +12,10 @@ import {
 
 const UserItem = (props) => {
   const { login, avatar_url } = props.user;
+
+  const userClickHandler = () => {
+    props.history.push(`/github/${login}`);
+  };
   return (
     <UserItemContainer>
       <ImgContainer>
@@ -18,9 +23,9 @@ const UserItem = (props) => {
       </ImgContainer>
 
       <UserName>{login}</UserName>
-      <Button to={`/github/${login}`}>More</Button>
+      <Button onClick={userClickHandler}>More</Button>
     </UserItemContainer>
   );
 };
 
-export default UserItem;
+export default withRouter(UserItem);

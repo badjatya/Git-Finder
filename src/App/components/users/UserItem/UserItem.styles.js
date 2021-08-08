@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // Importing Colors
 import Colors from "../../../constants/Colors";
@@ -38,7 +38,7 @@ export const UserName = styled.p`
   text-transform: capitalize;
 `;
 
-export const Button = styled(Link)`
+export const Button = styled.a`
   text-decoration: none;
   border: 2px solid ${Colors.primary};
   padding: 5px 20px;

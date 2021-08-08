@@ -24,7 +24,7 @@ const App = () => {
             <Route exact path="/" component={Homepage} />
             <Route exact path="/about" component={AboutPage} />
             <Route exact path="/github" component={GithubPage} />
-            <Route exact path="/about:login" component={UserDetailPage} />
+            <Route exact path="/github/:login" component={UserDetailPage} />
           </Switch>
         </Provider>
       </BrowserRouter>
