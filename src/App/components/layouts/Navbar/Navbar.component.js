@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Importing Styles
 import {
@@ -9,9 +9,16 @@ import {
   GithubIcon,
   NavLinks,
   NavLink,
+  HamburgerContainer,
+  HamburgerMenuOpen,
+  HamburgerMenuClose,
+  MobileMenuContainer,
+  MobileLink,
 } from "./Navbar.styles";
 
 const Navbar = () => {
+  const [menuVisible, setMenuVisible] = useState(false);
+
   return (
     <NavContainer>
       <Nav>
@@ -25,7 +32,22 @@ const Navbar = () => {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
         </NavLinks>
+
+        <HamburgerContainer>
+          {menuVisible ? (
+            <HamburgerMenuClose onClick={() => setMenuVisible(!menuVisible)} />
+          ) : (
+            <HamburgerMenuOpen onClick={() => setMenuVisible(!menuVisible)} />
+          )}
+        </HamburgerContainer>
       </Nav>
+
+      {menuVisible && (
+        <MobileMenuContainer>
+          <MobileLink to="/">Home</MobileLink>
+          <MobileLink to="/about">About</MobileLink>
+        </MobileMenuContainer>
+      )}
     </NavContainer>
   );
 };

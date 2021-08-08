@@ -28,6 +28,7 @@ export const Home = styled.main`
   @media screen and (max-width: 425px) {
     flex-direction: column-reverse;
     margin: 40px auto 0 auto;
+    z-index: 1;
   }
 `;
 
@@ -50,12 +51,14 @@ export const TextContainer = styled.div`
 export const ImgContainer = styled.div`
   width: 45%;
   height: 80%;
+  z-index: 1;
 
   /* Breakpoint 425px  */
   @media screen and (max-width: 425px) {
     width: 90%;
     height: 300px;
     margin-bottom: 40px;
+    z-index: 1;
   }
 
   /* Breakpoint 375px  */

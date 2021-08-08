@@ -6,6 +6,7 @@ import Colors from "../../../constants/Colors";
 
 // Importing Icons
 import { FaGithub } from "react-icons/fa";
+import { MdMenu, MdClear } from "react-icons/md";
 
 export const NavContainer = styled.div`
   width: 100%;
@@ -37,6 +38,7 @@ export const Nav = styled.nav`
   @media screen and (max-width: 425px) {
     width: 425px;
     max-width: 425px;
+    padding: 25px;
   }
 
   /* Breakpoint 375px  */
@@ -73,6 +75,11 @@ export const GithubIcon = styled(FaGithub)`
 export const NavLinks = styled.div`
   display: flex;
   align-items: center;
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
 `;
 
 export const NavLink = styled(Link)`
@@ -89,4 +96,50 @@ export const NavLink = styled(Link)`
   &:hover {
     color: ${Colors.secondary};
   }
+`;
+
+export const HamburgerContainer = styled.div`
+  display: none;
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 425px) {
+    display: block;
+  }
+`;
+
+export const HamburgerMenuOpen = styled(MdMenu)`
+  font-size: 2rem;
+  color: ${Colors.white};
+  cursor: pointer;
+`;
+
+export const HamburgerMenuClose = styled(MdClear)`
+  font-size: 2rem;
+  color: ${Colors.white};
+  cursor: pointer;
+`;
+
+export const MobileMenuContainer = styled.div`
+  background-color: ${Colors.primary};
+  width: 100%;
+  padding: 5px;
+  z-index: 10;
+  text-align: center;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+
+export const MobileLink = styled(Link)`
+  text-decoration: none;
+  color: ${Colors.white};
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  z-index: 10;
+  text-align: center;
+  font-weight: 600;
+
+  margin-bottom: 5px;
 `;
