@@ -8,6 +8,10 @@ export const Home = styled.main`
   display: flex;
   align-items: center;
   overflow: hidden;
+
+  @media screen and (max-width: 1440px) {
+    margin: 21% auto 0 auto;
+  }
 `;
 
 export const TextContainer = styled.div`

@@ -6,6 +6,10 @@ export const AboutContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 1440px) {
+    margin: 18% auto 5% auto;
+  }
 `;
 
 export const LeftColumn = styled.div`
