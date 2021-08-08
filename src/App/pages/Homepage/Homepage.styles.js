@@ -9,8 +9,14 @@ export const Home = styled.main`
   align-items: center;
   overflow: hidden;
 
+  /* Breakpoint 1440px  */
   @media screen and (max-width: 1440px) {
     margin: 21% auto 0 auto;
+  }
+
+  /* Breakpoint 1024px  */
+  @media screen and (max-width: 1024px) {
+    margin: 15% auto 2% auto;
   }
 `;
 
@@ -30,6 +36,11 @@ export const H1 = styled.h1`
   font-size: 4rem;
   font-weight: 600;
   color: ${Colors.primary};
+
+  /* Breakpoint 1024px  */
+  @media screen and (max-width: 1024px) {
+    font-size: 3rem;
+  }
 `;
 export const Form = styled.form`
   display: flex;

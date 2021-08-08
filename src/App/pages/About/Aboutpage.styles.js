@@ -7,8 +7,14 @@ export const AboutContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  /* Breakpoint 1440px  */
   @media screen and (max-width: 1440px) {
     margin: 18% auto 5% auto;
+  }
+
+  /* Breakpoint 1024px  */
+  @media screen and (max-width: 1024px) {
+    margin: 6% auto 2% auto;
   }
 `;
 

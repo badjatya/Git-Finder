@@ -23,4 +23,9 @@ export const Container = styled.main`
   width: 1024px;
   max-width: 1024px;
   margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    width: 768px;
+    max-width: 768px;
+  }
 `;

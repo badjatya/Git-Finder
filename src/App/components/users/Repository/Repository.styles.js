@@ -23,9 +23,14 @@ export const Details = styled.div`
 `;
 export const RepoDetails = styled.div`
   width: 25%;
+
+  /* Breakpoint 1024px  */
+  @media screen and (max-width: 1024px) {
+    width: 14%;
+  }
 `;
 export const ButtonContainer = styled.div`
-  width: 14%;
+  width: 20%;
 `;
 
 export const Heading = styled.p`

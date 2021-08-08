@@ -21,6 +21,11 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    width: 768px;
+    max-width: 768px;
+  }
 `;
 
 export const LogoContainer = styled(Link)`
