@@ -26,17 +26,17 @@ const UserDetailPage = ({ match }) => {
   const [user, setUser] = useState({});
   const [repository, setRepository] = useState([]);
 
-  // Searching user data
-  const searchUser = async (username) => {
-    const response = await axios.get(
-      `https://api.github.com/users/${username}?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
-    );
-    setUser(response.data);
-    getUserRepository(response.data.repos_url);
-  };
-
   // Pulling username from params
   useEffect(() => {
+    // Searching user data
+    const searchUser = async (username) => {
+      const response = await axios.get(
+        `https://api.github.com/users/${username}?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
+      );
+      setUser(response.data);
+      getUserRepository(response.data.repos_url);
+    };
+
     const username = match.params.login;
     searchUser(username);
   }, [match.params.login]);
@@ -67,7 +67,7 @@ const UserDetailPage = ({ match }) => {
       <RepoContainer>
         <Name>Repositories</Name>
         {repository.map((repo) => (
-          <Repository repo={repo} />
+          <Repository key={repo.name} repo={repo} />
         ))}
       </RepoContainer>
     </>

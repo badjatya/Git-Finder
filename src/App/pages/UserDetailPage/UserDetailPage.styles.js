@@ -4,8 +4,6 @@ import styled from "styled-components";
 import Colors from "./../../constants/Colors";
 
 export const UserDetail = styled.div`
-  width: 1024px;
-  max-width: 1024px;
   margin: 5% auto;
   display: flex;
   align-items: center;

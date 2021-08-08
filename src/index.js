@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 // Importing Global Styles
-import GlobalStyles from "./Global.styles";
+import { GlobalStyles } from "./Global.styles";
 
 ReactDOM.render(
   <React.StrictMode>

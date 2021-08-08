@@ -1,9 +1,9 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 // Importing Colors
 import Colors from "./App/constants/Colors";
 
-const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
     body {
     padding: 0;
     margin: 0;
@@ -19,4 +19,8 @@ const GlobalStyles = createGlobalStyle`
 
 `;
 
-export default GlobalStyles;
+export const Container = styled.main`
+  width: 1024px;
+  max-width: 1024px;
+  margin: 0 auto;
+`;

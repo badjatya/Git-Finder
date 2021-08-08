@@ -2,8 +2,6 @@ import styled from "styled-components";
 import Colors from "../../constants/Colors";
 
 export const AboutContainer = styled.div`
-  width: 1024px;
-  max-width: 1024px;
   margin: 7% auto 5% auto;
   display: flex;
   align-items: center;

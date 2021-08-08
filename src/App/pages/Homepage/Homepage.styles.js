@@ -4,8 +4,6 @@ import styled from "styled-components";
 import Colors from "../../constants/Colors";
 
 export const Home = styled.main`
-  width: 1024px;
-  max-width: 1024px;
   margin: 10% auto 0 auto;
   display: flex;
   align-items: center;
