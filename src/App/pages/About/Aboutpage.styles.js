@@ -16,16 +16,31 @@ export const AboutContainer = styled.div`
   @media screen and (max-width: 1024px) {
     margin: 6% auto 2% auto;
   }
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    margin: 10% auto 4% auto;
+  }
 `;
 
 export const LeftColumn = styled.div`
   width: 40%;
   height: 450px;
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    width: 47%;
+  }
 `;
 
 export const RightColumn = styled.div`
   width: 50%;
   height: 450px;
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    width: 47%;
+  }
 `;
 
 export const Img = styled.img`
@@ -38,10 +53,22 @@ export const Heading = styled.p`
   font-weight: 600;
   color: ${Colors.primary};
   text-transform: uppercase;
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
 `;
 
 export const Paragraph = styled.p`
   font-size: 1rem;
   color: #758283;
   font-weight: 400;
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
 `;

@@ -8,6 +8,11 @@ export const UserDetail = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const LeftColumn = styled.div`
@@ -21,6 +26,13 @@ export const LeftColumn = styled.div`
   @media screen and (max-width: 1024px) {
     height: 500px;
   }
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: 350px;
+    margin-bottom: 40px;
+  }
 `;
 
 export const RightColumn = styled.div`
@@ -32,6 +44,14 @@ export const RightColumn = styled.div`
     margin-top: -40px;
     width: 66%;
   }
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: 350px;
+    margin-bottom: 90px;
+    margin-top: -20px;
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -41,6 +61,11 @@ export const ImgContainer = styled.div`
   /* Breakpoint 1024px  */
   @media screen and (max-width: 1024px) {
     height: 350px;
+  }
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    height: 224px;
   }
 `;
 
@@ -63,6 +88,12 @@ export const Name = styled.p`
   @media screen and (max-width: 1024px) {
     margin-top: 25px;
     margin-bottom: 20px;
+  }
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -102,5 +133,11 @@ export const RepoContainer = styled.div`
   @media screen and (max-width: 1024px) {
     width: 768px;
     max-width: 768px;
+  }
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    width: 650px;
+    max-width: 650px;
   }
 `;

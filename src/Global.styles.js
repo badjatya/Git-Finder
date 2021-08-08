@@ -24,8 +24,15 @@ export const Container = styled.main`
   max-width: 1024px;
   margin: 0 auto;
 
+  /* Breakpoint 1024px  */
   @media screen and (max-width: 1024px) {
     width: 768px;
     max-width: 768px;
+  }
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    width: 650px;
+    max-width: 650px;
   }
 `;

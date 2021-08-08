@@ -26,6 +26,12 @@ export const Nav = styled.nav`
     width: 768px;
     max-width: 768px;
   }
+
+  /* Breakpoint 768px  */
+  @media screen and (max-width: 768px) {
+    width: 650px;
+    max-width: 650px;
+  }
 `;
 
 export const LogoContainer = styled(Link)`
