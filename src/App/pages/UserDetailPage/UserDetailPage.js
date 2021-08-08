@@ -12,10 +12,12 @@ import {
   ImgContainer,
   Img,
   Name,
+  Button,
+  ButtonContainer,
 } from "./UserDetailPage.styles";
 
 // Importing Components
-import TextWrapper from "../../components/layouts/TextWrapper/TextWrapper.component";
+import UserInformation from "../../components/users/UserInformation/UserInformation.component";
 
 const UserDetailPage = ({ match }) => {
   //State
@@ -43,33 +45,13 @@ const UserDetailPage = ({ match }) => {
           <Img src={user.avatar_url} alt="User Image" />
         </ImgContainer>
         <Name>{user.name}</Name>
+        <ButtonContainer>
+          <Button href={user.html_url}>Visit Profile</Button>
+        </ButtonContainer>
       </LeftColumn>
 
       <RightColumn>
-        <TextWrapper title="username" text={user.login ? user.login : "none"} />
-        <TextWrapper
-          title="location"
-          text={user.location ? user.location : "none"}
-        />
-        <TextWrapper title="bio" text={user.bio ? user.bio : "None"} />
-        <TextWrapper title="hireable" text={user.hireable ? "yes" : "no"} />
-        <TextWrapper title="website" text={user.blog ? user.blog : "none"} />
-        <TextWrapper
-          title="twitter"
-          text={user.twitter_username ? user.twitter_username : "none"}
-        />
-        <TextWrapper
-          title="followers"
-          text={user.followers ? user.followers : "none"}
-        />
-        <TextWrapper
-          title="following"
-          text={user.following ? user.following : "none"}
-        />
-        <TextWrapper
-          title="public repository"
-          text={user.public_repos ? user.public_repos : "none"}
-        />
+        <UserInformation user={user} />
       </RightColumn>
     </UserDetail>
   );

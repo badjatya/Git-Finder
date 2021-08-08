@@ -42,4 +42,26 @@ export const Name = styled.p`
   font-weight: 600;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 15px;
+`;
+
+export const ButtonContainer = styled.div`
+  width: 50%;
+  margin: 0 auto;
+`;
+
+export const Button = styled.a`
+  text-decoration: none;
+  color: ${Colors.primary};
+  border: 2px solid ${Colors.primary};
+  padding: 10px 15px;
+  display: block;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: ${Colors.primary};
+    color: ${Colors.white};
+  }
 `;
