@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // Importing Components
 import Navbar from "./App/components/layouts/Navbar/Navbar.component";
+import Footer from "./App/components/layouts/Footer/Footer.component";
 
 // Importing Pages
 import Homepage from "./App/pages/Homepage/Homepage";
@@ -26,6 +27,7 @@ const App = () => {
             <Route exact path="/github" component={GithubPage} />
             <Route exact path="/github/:login" component={UserDetailPage} />
           </Switch>
+          {/* <Footer /> */}
         </Provider>
       </BrowserRouter>
     </>
