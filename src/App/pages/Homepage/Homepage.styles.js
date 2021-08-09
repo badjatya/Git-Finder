@@ -25,7 +25,7 @@ export const Home = styled.main`
   }
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     flex-direction: column-reverse;
     margin: 40px auto 0 auto;
     z-index: 1;
@@ -37,13 +37,13 @@ export const TextContainer = styled.div`
   margin-right: 80px;
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     width: 78%;
     margin: 0 auto;
   }
 
   /* Breakpoint 320px  */
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 321px) {
     width: 90%;
     margin: 0 auto;
   }
@@ -54,7 +54,7 @@ export const ImgContainer = styled.div`
   z-index: 1;
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     width: 90%;
     height: 300px;
     margin-bottom: 40px;
@@ -62,7 +62,7 @@ export const ImgContainer = styled.div`
   }
 
   /* Breakpoint 375px  */
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 376px) {
     margin-bottom: 10px;
   }
 `;
@@ -88,12 +88,12 @@ export const H1 = styled.h1`
   }
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     font-size: 2rem;
   }
 
   /* Breakpoint 375px  */
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 376px) {
     font-size: 1.5rem;
     text-align: center;
   }
@@ -109,7 +109,7 @@ export const Input = styled.input`
   border: 1px solid ${Colors.primary};
 
   /* Breakpoint 375px  */
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 376px) {
     padding: 10px 15px;
   }
 `;

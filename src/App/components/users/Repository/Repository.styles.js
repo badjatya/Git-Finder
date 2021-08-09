@@ -18,7 +18,7 @@ export const Container = styled.div`
   }
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     flex-direction: column;
   }
 `;
@@ -27,7 +27,7 @@ export const Details = styled.div`
   width: 50%;
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     width: 90%;
   }
 `;
@@ -43,7 +43,7 @@ export const RepoDetails = styled.div`
   }
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     width: 90%;
   }
 `;
@@ -51,7 +51,7 @@ export const ButtonContainer = styled.div`
   width: 20%;
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     width: 90%;
   }
 `;
@@ -62,13 +62,13 @@ export const Heading = styled.p`
   font-weight: 600;
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     margin-bottom: -10px;
     margin-top: 5px;
   }
 
   /* Breakpoint 320px  */
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 321px) {
     font-size: 1rem;
   }
 `;
@@ -79,12 +79,12 @@ export const Text = styled.p`
   font-weight: 400;
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     margin-bottom: -10px;
   }
 
   /* Breakpoint 320px  */
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 321px) {
     font-size: 0.9rem;
   }
 `;
@@ -105,13 +105,13 @@ export const Button = styled.a`
   }
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     margin-top: 20px;
     margin-bottom: 10px;
   }
 
   /* Breakpoint 320px  */
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 321px) {
     font-size: 0.9rem;
   }
 `;

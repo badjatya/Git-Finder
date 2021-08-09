@@ -29,7 +29,7 @@ export const AboutContainer = styled.div`
   }
 
   /* Breakpoint 375px  */
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 376px) {
     margin: 0 auto 2% auto;
   }
 `;
@@ -44,7 +44,7 @@ export const LeftColumn = styled.div`
   }
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     width: 90%;
     height: 250px;
   }
@@ -60,7 +60,7 @@ export const RightColumn = styled.div`
   }
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     width: 90%;
     height: 250px;
   }

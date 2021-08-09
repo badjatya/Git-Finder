@@ -18,7 +18,7 @@ export const UserItemContainer = styled.div`
   box-shadow: 5px 5px 15px 0px rgba(17, 45, 78, 0.57);
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     width: 80%;
     margin-bottom: 30px;
   }
@@ -61,7 +61,7 @@ export const Button = styled.a`
   }
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     display: block;
     width: 50%;
     text-align: center;

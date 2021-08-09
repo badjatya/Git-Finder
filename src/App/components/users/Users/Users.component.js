@@ -13,7 +13,7 @@ const UsersContainer = styled.div`
   flex-wrap: wrap;
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     flex-direction: column;
   }
 `;

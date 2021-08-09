@@ -97,7 +97,7 @@ export const Name = styled.p`
   }
 
   /* Breakpoint 320px  */
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 321px) {
     font-size: 1.2rem;
   }
 `;
@@ -147,7 +147,7 @@ export const RepoContainer = styled.div`
   }
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     width: 90%;
     margin: 100px auto 30px auto;
   }

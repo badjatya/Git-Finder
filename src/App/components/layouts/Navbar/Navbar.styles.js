@@ -35,20 +35,20 @@ export const Nav = styled.nav`
   }
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     width: 425px;
     max-width: 425px;
     padding: 25px;
   }
 
   /* Breakpoint 375px  */
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 376px) {
     width: 375px;
     max-width: 375px;
   }
 
   /* Breakpoint 320px  */
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 321px) {
     width: 320px;
     max-width: 320px;
   }
@@ -77,7 +77,7 @@ export const NavLinks = styled.div`
   align-items: center;
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     display: none;
   }
 `;
@@ -102,7 +102,7 @@ export const HamburgerContainer = styled.div`
   display: none;
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     display: block;
   }
 `;
