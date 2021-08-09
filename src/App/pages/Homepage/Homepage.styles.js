@@ -42,6 +42,12 @@ export const TextContainer = styled.div`
     margin: 0 auto;
   }
 
+  /* Breakpoint 393px  */
+  @media screen and (max-width: 394px) {
+    width: 83%;
+    margin-top: 50px;
+  }
+
   /* Breakpoint 320px  */
   @media screen and (max-width: 321px) {
     width: 90%;
@@ -90,6 +96,12 @@ export const H1 = styled.h1`
   /* Breakpoint 425px  */
   @media screen and (max-width: 426px) {
     font-size: 2rem;
+  }
+
+  /* Breakpoint 393px  */
+  @media screen and (max-width: 394px) {
+    font-size: 1.7rem;
+    text-align: center;
   }
 
   /* Breakpoint 375px  */

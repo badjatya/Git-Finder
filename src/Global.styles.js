@@ -43,6 +43,12 @@ export const Container = styled.main`
     max-width: 425px;
   }
 
+  /* Breakpoint 393px  */
+  @media screen and (max-width: 394px) {
+    width: 393px;
+    max-width: 393px;
+  }
+
   /* Breakpoint 375px  */
   @media screen and (max-width: 376px) {
     width: 375px;
