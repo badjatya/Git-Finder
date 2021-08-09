@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 // Importing Components
 import Navbar from "./App/components/layouts/Navbar/Navbar.component";
@@ -21,7 +21,7 @@ import { Container } from "./Global.styles";
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Provider store={store}>
           <Navbar />
           <Container>
@@ -34,7 +34,7 @@ const App = () => {
           </Container>
           {/* <Footer /> */}
         </Provider>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 };

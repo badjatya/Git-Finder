@@ -23,7 +23,7 @@ export const AboutContainer = styled.div`
   }
 
   /* Breakpoint 425px  */
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     flex-direction: column;
     margin: 10% auto 50px auto;
   }

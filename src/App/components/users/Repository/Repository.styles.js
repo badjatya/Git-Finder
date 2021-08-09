@@ -37,14 +37,14 @@ export const RepoDetails = styled.div`
   /* Breakpoint 1024px  */
   @media screen and (max-width: 1024px) {
     width: 14%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   /* Breakpoint 425px  */
   @media screen and (max-width: 426px) {
     width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 `;
 export const ButtonContainer = styled.div`
