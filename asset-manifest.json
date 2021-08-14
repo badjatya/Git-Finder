@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Git-Finder/static/js/main.7128e429.chunk.js",
-    "main.js.map": "/Git-Finder/static/js/main.7128e429.chunk.js.map",
+    "main.js": "/Git-Finder/static/js/main.7edf7138.chunk.js",
+    "main.js.map": "/Git-Finder/static/js/main.7edf7138.chunk.js.map",
     "runtime-main.js": "/Git-Finder/static/js/runtime-main.d3a4e543.js",
     "runtime-main.js.map": "/Git-Finder/static/js/runtime-main.d3a4e543.js.map",
     "static/js/2.59470d27.chunk.js": "/Git-Finder/static/js/2.59470d27.chunk.js",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.d3a4e543.js",
     "static/js/2.59470d27.chunk.js",
-    "static/js/main.7128e429.chunk.js"
+    "static/js/main.7edf7138.chunk.js"
   ]
 }
