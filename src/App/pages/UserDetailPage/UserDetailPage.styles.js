@@ -13,6 +13,11 @@ export const UserDetail = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
+
+  /* Breakpoint 425px  */
+  @media screen and (max-width: 426px) {
+    margin-top: 40px;
+  }
 `;
 
 export const LeftColumn = styled.div`
