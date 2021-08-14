@@ -41,6 +41,12 @@ export const Nav = styled.nav`
     padding: 25px;
   }
 
+  /* Breakpoint 413px  */
+  @media screen and (max-width: 413px) {
+    width: 412px;
+    max-width: 412px;
+  }
+
   /* Breakpoint 393px  */
   @media screen and (max-width: 394px) {
     width: 393px;

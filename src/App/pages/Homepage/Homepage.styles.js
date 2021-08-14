@@ -42,6 +42,12 @@ export const TextContainer = styled.div`
     margin: 0 auto;
   }
 
+  /* Breakpoint 413px  */
+  @media screen and (max-width: 413px) {
+    width: 78%;
+    margin: 0 auto;
+  }
+
   /* Breakpoint 393px  */
   @media screen and (max-width: 394px) {
     width: 83%;
@@ -65,6 +71,12 @@ export const ImgContainer = styled.div`
     height: 300px;
     margin-bottom: 40px;
     z-index: 1;
+  }
+
+  /* Breakpoint 413px  */
+  @media screen and (max-width: 413px) {
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
 
   /* Breakpoint 375px  */
@@ -96,6 +108,11 @@ export const H1 = styled.h1`
   /* Breakpoint 425px  */
   @media screen and (max-width: 426px) {
     font-size: 2rem;
+  }
+
+  /* Breakpoint 413px  */
+  @media screen and (max-width: 413px) {
+    font-size: 2.5rem;
   }
 
   /* Breakpoint 393px  */
